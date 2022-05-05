@@ -16,12 +16,19 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             font-size: 1em;
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+        }
+
+        thead > tr >th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
 
         td,th{
