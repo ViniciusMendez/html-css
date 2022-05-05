@@ -9,9 +9,12 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+        }
 
         table{
-            width: 500px;
+            width: 400px;
             border-collapse: collapse;
         }
         caption{
@@ -30,6 +33,7 @@
             background-color: gray;
             color: white;
         }
+        
     </style>
 </head>
 <body>
@@ -50,8 +54,8 @@
     <CAption>pOPULAÇAO DAS uNIDADES fEDERATIVAS</CAption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </tr>
     </thead>
 
@@ -65,14 +69,15 @@
             <td>Minas gerais</td>
             <td>21 168 791</td>
         </tr>
-
+    <tbody>
         <tr>
             <td>Rio de Janeiro</td>
             <td>17 264 943</td>
         </tr>
+    </tbody>
 
     <tfoot>
-        <th>total de Habitantes</th>
+        <th scope="row">total de Habitantes</th>
         <td>000000</td>
     </tfoot>
 
